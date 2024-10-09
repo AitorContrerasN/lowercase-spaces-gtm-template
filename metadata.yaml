@@ -1,0 +1,8 @@
+# metadata.yaml
+name: "Your Template Name"
+author: "Your Name"
+description: "Brief description of your GTM template."
+url: "https://github.com/username/repository-name"
+template_url: "https://github.com/username/repository-name/blob/main/template.tpl"
+version: "1.0.0"
+license: "Apache-2.0"
