@@ -52,10 +52,14 @@ let transformed = (data.input || '').toLowerCase(); // Convert input to lowercas
 if (data.checkbox1 && !data.checkbox2) {
   // If checkbox1 is true and checkbox2 is false: remove spaces
   transformed = transformed.split(' ').join('');
-}
-
-if (data.checkbox2) {
-  // If checkbox2 is true: remove everything except letters
+} else if (!data.checkbox1 && data.checkbox2) {
+  // If checkbox2 is true and checkbox1 is false: remove non-alphabetic characters, keep spaces
+  transformed = transformed.split('').filter(function(char) {
+    return (char >= 'a' && char <= 'z') || char === ' '; // Keep only a-z characters and spaces
+  }).join('');
+} else if (data.checkbox1 && data.checkbox2) {
+  // If both checkbox1 and checkbox2 are true: remove spaces and then remove non-alphabetic characters
+  transformed = transformed.split(' ').join(''); // Remove spaces first
   transformed = transformed.split('').filter(function(char) {
     return char >= 'a' && char <= 'z'; // Keep only a-z characters
   }).join('');
@@ -71,6 +75,6 @@ scenarios: []
 
 ___NOTES___
 
-Created on 9/10/2024, 17:22:01
+Created on 9/10/2024, 17:38:37
 
 
