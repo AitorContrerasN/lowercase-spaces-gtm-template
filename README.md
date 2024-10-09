@@ -19,14 +19,11 @@ and you want to transform it based on the checkboxes:
 1. **Checkbox 1** activated (spaces removed): "helloworld123!!!"
 
 
-2. **Checkbox 2** activated (remove non-alphabetic characters): "helloworld"
-
-
-3. **Both Checkbox 1 and Checkbox 2 activated**: "helloworld"
+2. **Both Checkbox 1 and Checkbox 2 activated**: "helloworld"
 
 
 
-4. **No checkboxes activated**: " hello world 123!!! "
+3. **No checkboxes activated**: " hello world 123!!! "
 
 
 ## Configuration Options
