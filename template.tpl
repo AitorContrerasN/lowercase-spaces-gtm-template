@@ -14,6 +14,7 @@ ___INFO___
   "version": 1,
   "securityGroups": [],
   "displayName": "Lowercase spaces and symbols",
+  "categories": ["UTILITY", "PERSONALIZATION"],
   "description": "GTM Server template to normalize text, removing spaces and non-alphabetic characters based on checkbox configurations.",
   "containerContexts": [
     "SERVER"
